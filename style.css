@@ -1,0 +1,35 @@
+* {
+    padding: 3px 5px ;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navul ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.diva {
+    display: flex;
+    gap: 24px;
+    text-decoration: none;
+}
+
+.diva a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid blue;
+    border-radius: 52px;
+    width: 96px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
