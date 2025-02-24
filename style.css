@@ -1,3 +1,6 @@
+:root {
+    --color-blue: #2558EB;
+}
 * {
     padding: 3px 5px ;
     margin: 0;
@@ -13,7 +16,7 @@ header {
 .navul ul {
     display: flex;
     list-style-type: none;
-    gap: 40px;
+    gap: 30px;
 }
 
 .diva {
@@ -22,14 +25,17 @@ header {
     text-decoration: none;
 }
 
-.diva a {
+.diva button {
     text-decoration: none;
     color: inherit;
     border: 1px solid blue;
     border-radius: 52px;
-    width: 96px;
-    height: 51px;
+    width: 90px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.sing{
+    background-color: var(--color-blue);
 }
