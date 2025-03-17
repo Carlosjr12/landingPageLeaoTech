@@ -78,13 +78,13 @@ header {
 }
 
 .view {
-    width: 195px;
+    width: 150px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 30px; 
 }
 
 .view:hover {
-    width: 200px;
+    width: 155px;
     height: 55px;
     transform: scale(var(--hover-scale));
     box-shadow: var(--hover-shadow);
