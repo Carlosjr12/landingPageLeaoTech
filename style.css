@@ -46,7 +46,8 @@ header {
     text-decoration: none;
 }
 
-.diva button, .view {
+.diva button,
+.view {
     text-decoration: none;
     color: inherit;
     border: 1px solid var(--color-blue);
@@ -67,7 +68,8 @@ header {
     box-shadow: var(--hover-shadow);
 }
 
-.diva .sing, .view {
+.diva .sing,
+.view {
     color: #FFFFFF;
     background-color: var(--color-blue);
 }
@@ -80,7 +82,7 @@ header {
 .view {
     width: 150px;
     height: 50px;
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .view:hover {
@@ -99,6 +101,7 @@ h1 {
     font-weight: 500;
     font-size: 54px;
 }
+
 h2 {
     color: #555555;
     font-size: 40px;
@@ -116,6 +119,7 @@ p {
     text-align: center;
     padding: 0 90px;
 }
+
 .part2 {
     margin-top: 60px;
     display: flex;
@@ -125,4 +129,98 @@ p {
 
 }
 
+.cards {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
 
+}
+
+.divcard {
+    cursor: pointer;
+    transition: var(--hover-transition);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 318px;
+    height: 327px;
+    padding: 16px;
+    background-color: var(--color-blue);
+    border-radius: 8px;
+
+    h3 {
+        width: 286px;
+        height: 72px;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    p {
+        width: 286px;
+        height: 120px;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-size: 17px;
+    }
+}
+
+.divcard:hover {
+    transform: scale(var(--hover-scale));
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imgcard {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    align-content: center;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 31px;
+    margin-top: 100px;
+    button {
+        color: var(--color-blue);
+        padding: 8px 24px;
+        border: 1px solid #C0D0FF;
+        border-radius: 52px;
+        background-color: #C0D0FF;
+        cursor: pointer;
+        transition: var(--hover-transition);
+    }
+    p{
+        padding: 0 150px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.about button:hover {
+    transform: scale(var(--hover-scale));
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.summarys{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    summary{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        color: var(--color-blue);
+        list-style: none;
+    }
+}
