@@ -1,9 +1,15 @@
 :root {
     --color-blue: #2558EB;
+    --hover-scale: 1.05;
+    --hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --hover-transition: all 0.1s ease-in-out;
+    --hover-color: #1b3ca0;
 }
+
 * {
-    padding: 3px 5px ;
+    padding: 3px 5px;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -11,12 +17,27 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
 }
 
 .navul ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
+    font-weight: bold;
+    color: #555555;
+    transition: var(--hover-transition);
+}
+
+.navul ul li {
+    cursor: pointer;
+    transition: var(--hover-transition);
+}
+
+.navul ul li:hover {
+    color: var(--hover-color);
+    transform: scale(var(--hover-scale));
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .diva {
@@ -25,17 +46,83 @@ header {
     text-decoration: none;
 }
 
-.diva button {
+.diva button, .view {
     text-decoration: none;
     color: inherit;
-    border: 1px solid blue;
+    border: 1px solid var(--color-blue);
     border-radius: 52px;
     width: 90px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: var(--hover-transition);
 }
-.sing{
+
+.diva button:hover {
+    width: 93px;
+    height: 43px;
+    transform: scale(var(--hover-scale));
+    box-shadow: var(--hover-shadow);
+}
+
+.diva .sing, .view {
+    color: #FFFFFF;
     background-color: var(--color-blue);
 }
+
+.diva .log {
+    color: var(--color-blue);
+    background-color: white;
+}
+
+.view {
+    width: 195px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.view:hover {
+    width: 200px;
+    height: 55px;
+    transform: scale(var(--hover-scale));
+    box-shadow: var(--hover-shadow);
+    background-color: var(--hover-color);
+}
+
+span {
+    color: var(--color-blue);
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 54px;
+}
+h2 {
+    color: #555555;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    color: #555555;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 90px;
+}
+.part2 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
